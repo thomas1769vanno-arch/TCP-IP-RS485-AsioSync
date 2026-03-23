@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Avvia SLAVE (COM89)",
+            "type": "cppvsdbg", // Cambia in "cppdbg" se usi GDB/MinGW
+            "request": "launch",
+            "program": "${workspaceFolder}/slave.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "externalTerminal" // Apre una finestra separata per vedere i log
+        },
+        {
+            "name": "Avvia GATEWAY MASTER (TCP 8080)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/gateway.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "externalTerminal"
+        },
+        {
+            "name": "Avvia MAIN CLIENT (TCP Client)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/main_client.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "integratedTerminal"
+        }
+    ]
+}
