@@ -1,0 +1,7 @@
+.cvm/
+dist/
+# Test artifacts
+test/fake-project/
+trash/
+
+ai-agent-lite.7z
